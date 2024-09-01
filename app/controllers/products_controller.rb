@@ -4,8 +4,13 @@ class ProductsController < ApplicationController
   #   render json: {message: product}
   # end
 
-  def list
-    @product = Product.all
+  def product_list
+    @products = Product.all
     render template: "products/index"
+  end
+
+  def product_one
+    @product = Product.find_by(id: params["id"])
+    render template: "products/show"
   end
 end
