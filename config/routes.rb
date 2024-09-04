@@ -6,13 +6,19 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # show a single product
-  get "/one/:id" => "products#one_product"
+  get "/product/:id" => "products#one_product"
 
   #show all products
-  get "/products" => "products#multi_product"
+  get "/products" => "products#index"
 
   #creatting a new item
-  post "/products" => "products#create"
+  post "/product" => "products#create"
+
+  #update info
+  patch "/product/:id" => "products#update"
   # Defines the root path route ("/")
   # root "posts#index"
+
+  #delete info
+  delete "/product/:id" => "products#destroy"
 end
