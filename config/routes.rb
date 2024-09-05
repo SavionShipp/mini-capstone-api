@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # show a single product
-  get "/product/:id" => "products#one_product"
+  get "/product/:id" => "products#show"
 
   #show all products
   get "/products" => "products#index"
