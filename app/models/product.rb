@@ -15,9 +15,12 @@ class Product < ApplicationRecord
   end
 
   def total
-    tax_rate = 0.09
-    total_amount = price + ( price * tax_rate )
+    total_amount = price + tax
     return total_amount
+  end
+
+  def decimal
+    p price.to_s
   end
 end
 
