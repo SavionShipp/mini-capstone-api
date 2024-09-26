@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  price: 1
-  description: MyString
+  email: MyString
+  password_digest: MyString
 
 two:
   name: MyString
-  price: 1
-  description: MyString
+  email: MyString
+  password_digest: MyString

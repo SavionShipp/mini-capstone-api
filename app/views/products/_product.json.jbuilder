@@ -5,8 +5,9 @@ json.price product.price
 json.decimal product.decimal
 json.tax product.tax
 json.total product.total
-json.image_url product.image_url
 json.description product.description
 json.item_tracker product.item_tracker
+json.supplier_id product.supplier_id
+json.supplier product.supplier
 json.created_at product.created_at
 json.updated_at product.updated_at

@@ -14,19 +14,20 @@ class ProductsController < ApplicationController
     @product = Product.new(
       name: params[:name],
       price: params[:price],
-      image_url: params[:image_url],
       description: params[:description],
       item_tracker: params[:item_tracker]
     )
-    @product.save
-    render template: "products/show"
+    if @product.save
+      render template: "products/show"
+    else
+      render json: {message: @product.errors.full_messages}
+    end
   end
 
   def update
     @product = Product.find_by(id: params[:id]) 
     @product.name = params[:name] || @product.name
     @product.price = params[:price] || @product.price
-    @product.image_url = params[:image_url] || @product.image_url
     @product.description = params[:description] || @product.description
     @product.item_tracker = params[:item_tracker] || @product.item_tracker
     @product.save

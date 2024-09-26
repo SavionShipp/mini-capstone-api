@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   #show all products
   get "/products" => "products#index"
 
-  #creatting a new item
+  #creating a new item
   post "/product" => "products#create"
 
   #update info
@@ -21,4 +21,7 @@ Rails.application.routes.draw do
 
   #delete info
   delete "/product/:id" => "products#destroy"
+
+  #create users new model
+  post "/users" => "users#create"
 end
