@@ -24,4 +24,7 @@ Rails.application.routes.draw do
 
   #create users new model
   post "/users" => "users#create"
+
+  #creates a session for user
+  post "/sessions" => "sessions#create"
 end
