@@ -7,6 +7,7 @@ json.tax product.tax
 json.total product.total
 json.description product.description
 json.item_tracker product.item_tracker
+json.categories product.categories
 json.supplier_id product.supplier_id
 json.supplier product.supplier
 json.created_at product.created_at
