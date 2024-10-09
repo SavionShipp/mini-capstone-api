@@ -7,14 +7,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-def new_supplier
-supplier = Supplier.new(name: "Costco", email:"costco123@gmail.com", phone_number: "987654321")
+# def new_supplier
+# supplier = Supplier.new(name: "Costco", email:"costco123@gmail.com", phone_number: "987654321")
 
-supplier.save
-end
+# supplier.save
+# end
 
-def new_image
-  image = Image.new(url: "https://media.istockphoto.com/id/1256509544/vector/pencil-flat-vector-illustration-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=IfuOdd40OFqM-6jzqH6K2Lo3oOhhoypEDGEub-5dmIU=")
+# def new_image
+#   image = Image.new(url: "https://media.istockphoto.com/id/1256509544/vector/pencil-flat-vector-illustration-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=IfuOdd40OFqM-6jzqH6K2Lo3oOhhoypEDGEub-5dmIU=")
 
-  image.save
-end
+#   image.save
+# end
+
+CartedProduct.create(user_id:"2", product_id:"10", order_id:"", quantity:"1", status:"carted" )
