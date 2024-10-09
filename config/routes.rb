@@ -33,4 +33,8 @@ Rails.application.routes.draw do
   post "/cart" => "carted_products#create"
 
   delete "/cart/:id" => "carted_products#destroy"
+
+  post "/order" => "orders#create"
+
+  get "/orders" => "orders#index"
 end
