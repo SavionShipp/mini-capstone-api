@@ -28,11 +28,11 @@ Rails.application.routes.draw do
   #creates a session for user
   post "/sessions" => "sessions#create"
 
-  get "/cart" => "carted_products#index"
+  get "/carted_products" => "carted_products#index"
 
-  post "/cart" => "carted_products#create"
+  post "/carted_product" => "carted_products#create"
 
-  delete "/cart/:id" => "carted_products#destroy"
+  delete "/carted_product/:id" => "carted_products#destroy"
 
   post "/order" => "orders#create"
 
